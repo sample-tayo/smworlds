@@ -92,6 +92,7 @@ button[type="submit"] {
 }
 
 #totalgoals {
-Padding: 10px;
-Background-color: #fff;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
 }
