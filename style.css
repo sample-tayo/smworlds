@@ -5,6 +5,7 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  color: #fff;
 }
 
 body {
@@ -60,6 +61,7 @@ input[type="text"] {
   /* margin-bottom: 20px; */
   border-radius: 5px;
   border: 1px solid #dcdcdc;
+  color: #000;
 }
 
 .button-field {
@@ -80,11 +82,12 @@ button[type="submit"] {
 
 .form-field input[type="number"] {
   width: 100%;
-  width: 320px;
+  /* width: 320px; */
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #dcdcdc;
+  color: #000;
 }
 
 .hidden {
@@ -93,6 +96,16 @@ button[type="submit"] {
 
 #totalgoals {
   padding: 10px;
-  background-color: #fff;
+  background-color: #000;
   text-align: center;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: #720e9e;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
 }
