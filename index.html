@@ -35,6 +35,11 @@
                 Defender
               </button>
             </div>
+            <div class="button-field">
+              <button type="submit" value="golden-glove" id="golden-glove-btn">
+                Golden Glove
+              </button>
+            </div>
             <!-- <div class="button-field">
               <button type="submit" value="striker">Striker</button>
             </div> -->
@@ -44,7 +49,7 @@
           <div class="form-field">
             <h2>Stats Calculator</h2>
             <div id="playerNameDisplay"></div>
-            <label for="goals">Goals:</label>
+            <label for="goals" id="goalsInput-label">Goals:</label>
             <input
               type="number"
               id="goals"
@@ -56,7 +61,7 @@
           </div>
 
           <div class="form-field">
-            <label for="assists">Assists:</label>
+            <label for="assists" id="assistInput-label">Assists:</label>
             <input
               type="number"
               id="assists"
@@ -104,12 +109,25 @@
           </div>
 
           <div class="form-field">
-            <label for="cleansheets">Cleansheets</label>
+            <label for="cleansheets" id="cleansheets-label">Cleansheets</label>
             <input
               type="number"
               id="cleansheets"
               name="cleansheets"
               placeholder="how many cleansheets"
+              autocomplete="off"
+            />
+            <small></small>
+          </div>
+
+          <div class="form-field">
+            <label for="avg-rating" id="avgRating-label">avg-rating:</label>
+            <input
+              type="number"
+              step="6.55"
+              id="avg-rating"
+              name="avg-rating"
+              placeholder="how many avg-rating"
               autocomplete="off"
             />
             <small></small>
@@ -122,19 +140,6 @@
               id="trophies"
               name="trophies"
               placeholder="how many trophies"
-              autocomplete="off"
-            />
-            <small></small>
-          </div>
-
-          <div class="form-field">
-            <label for="avg-rating">avg-rating:</label>
-            <input
-              type="number"
-              step="0.01"
-              id="avg-rating"
-              name="avg-rating"
-              placeholder="how many avg-rating"
               autocomplete="off"
             />
             <small></small>
