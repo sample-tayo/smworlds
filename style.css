@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/assets/victoria-prymak-RvA7rX2q9bo-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  backdrop-filter: blur(20px);
+  opacity: 0.9;
+  z-index: -1;
+  /* justify-content: center;
+  align-items: center; */
+}
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+  gap: 20px;
+  background-color: rgba(
+    rgb(132, 74, 74),
+    rgb(128, 229, 128),
+    rgb(129, 129, 219),
+    0.5
+  );
+  width: 400px;
+  max-width: 100%;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+/* Set a max height for both sides */
+.left-side,
+.right-side {
+  max-height: 500px; /* Change this value to your desired max height */
+  overflow: auto;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+/* button styling */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  /* margin-bottom: 20px; */
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+}
+
+.button-field {
+  margin-bottom: 15px;
+}
+button,
+button[type="submit"] {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #720e9e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* form field */
+
+.form-field input[type="number"] {
+  width: 100%;
+  width: 320px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  /* .container {
+    flex-direction: column;
+    height: 80%;
+    width: 90%;
+  } */
+}
