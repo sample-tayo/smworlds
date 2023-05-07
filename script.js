@@ -25,6 +25,16 @@ const avgRatingLabel = document.querySelector("#avgRating-label");
 const calculateButton = document.querySelector("#calculate-button");
 const totalGoals = document.querySelector("#totalgoals");
 
+//displaying results
+const totalGoalsDisplay = document.querySelector("#totalGoalsDisplay");
+const totalAssistDisplay = document.querySelector("#totalAssistDisplay");
+const totalmotmDisplay = document.querySelector("#totalmotmDisplay");
+const totalYellowCard = document.querySelector("#totalYellowCard");
+const totalRedCardDisplay = document.querySelector("#totalRedCard");
+const avgRatingsDisplay = document.querySelector("#avgRatingsDisplay");
+const totalTrophiesDisplay = document.querySelector("#totalTrophiesDisplay");
+const playerDisplay = document.querySelector("#player-name-display");
+
 // to show flex 2
 const hidden = document.querySelector(".hidden");
 
@@ -103,8 +113,8 @@ goldenGloveBtn.addEventListener("click", function (event) {
   goalsInputLabel.style.display = "none";
   assistsInput.style.display = "none";
   assistInputLabel.style.display = "none";
-  averageRating.style.display = "block";
-  avgRatingLabel.style.display = "inline";
+  averageRating.style.display = "none";
+  avgRatingLabel.style.display = "none";
 });
 
 calculateButton.addEventListener("click", () => {
@@ -189,5 +199,13 @@ calculateButton.addEventListener("click", () => {
   // const text = playerName.value;
   // console.log(`${text}`);
   // console.log(`${text} ${totalScore} pts`);
-  totalGoals.textContent = `${totalScore} pts`;
+  playerDisplay.textContent = `${playerName.value}`;
+  totalGoals.textContent = `Total-points: ${totalScore}pts`;
+  totalGoalsDisplay.textContent = `Goals: ${goalsInput.value} || ${goals}pts `;
+  totalAssistDisplay.textContent = `Assists: ${assistsInput.value} || ${assists}pts`;
+  totalmotmDisplay.textContent = `MOTM: ${motmInput.value} || ${motm}pts`;
+  totalmotmDisplay.textContent = `Yellow-Card: ${yellowCardsInput.value} || ${yellowCards}pts`;
+  totalRedCardDisplay.textContent = `Red-Card: ${redCardsInput.value} || ${redCards}pts`;
+  avgRatingsDisplay.textContent = `Avg-Ratings: ${averageRating.value} || ${avgRatingPoints}pts`;
+  totalTrophiesDisplay.textContent = `Trophies: ${numOfTrophies.value}|| ${trophies}pts`;
 });
