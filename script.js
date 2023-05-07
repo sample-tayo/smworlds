@@ -31,6 +31,9 @@ const totalAssistDisplay = document.querySelector("#totalAssistDisplay");
 const totalmotmDisplay = document.querySelector("#totalmotmDisplay");
 const totalYellowCard = document.querySelector("#totalYellowCard");
 const totalRedCardDisplay = document.querySelector("#totalRedCard");
+const totalCleanSheetsDisplay = document.querySelector(
+  "#totalCleanSheetsDisplay"
+);
 const avgRatingsDisplay = document.querySelector("#avgRatingsDisplay");
 const totalTrophiesDisplay = document.querySelector("#totalTrophiesDisplay");
 const playerDisplay = document.querySelector("#player-name-display");
@@ -204,8 +207,9 @@ calculateButton.addEventListener("click", () => {
   totalGoalsDisplay.textContent = `Goals: ${goalsInput.value} || ${goals}pts `;
   totalAssistDisplay.textContent = `Assists: ${assistsInput.value} || ${assists}pts`;
   totalmotmDisplay.textContent = `MOTM: ${motmInput.value} || ${motm}pts`;
-  totalmotmDisplay.textContent = `Yellow-Card: ${yellowCardsInput.value} || ${yellowCards}pts`;
+  totalYellowCard.textContent = `Yellow-Card: ${yellowCardsInput.value} || ${yellowCards}pts`;
   totalRedCardDisplay.textContent = `Red-Card: ${redCardsInput.value} || ${redCards}pts`;
+  totalCleanSheetsDisplay.textContent = `CleanSheet: ${cleanSheets.value} || ${totalCleanSheets}pts`;
   avgRatingsDisplay.textContent = `Avg-Ratings: ${averageRating.value} || ${avgRatingPoints}pts`;
-  totalTrophiesDisplay.textContent = `Trophies: ${numOfTrophies.value}|| ${trophies}pts`;
+  totalTrophiesDisplay.textContent = `Trophies: ${numOfTrophies.value} || ${trophies}pts`;
 });
