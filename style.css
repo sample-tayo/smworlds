@@ -94,10 +94,10 @@ button[type="submit"] {
   display: none;
 }
 
-#totalgoals {
-  padding: 10px;
+#stats-display {
+  padding: 10px 50px;
   background-color: #000;
-  text-align: center;
+  text-align: left;
 }
 header {
   position: sticky;
