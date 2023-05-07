@@ -61,6 +61,8 @@ midfielderBtn.addEventListener("click", function (event) {
   // Show the clean sheets input
   cleanSheets.style.display = "none";
   cleanSheetLabel.style.display = "none";
+  averageRating.style.display = "block";
+  avgRatingLabel.style.display = "inline";
 });
 
 defenderBtn.addEventListener("click", function (event) {
@@ -78,6 +80,8 @@ defenderBtn.addEventListener("click", function (event) {
   // Show the clean sheets input
   cleanSheetLabel.style.display = "inline";
   cleanSheets.style.display = "block";
+  averageRating.style.display = "block";
+  avgRatingLabel.style.display = "inline";
 });
 
 goldenGloveBtn.addEventListener("click", function (event) {
@@ -99,6 +103,8 @@ goldenGloveBtn.addEventListener("click", function (event) {
   goalsInputLabel.style.display = "none";
   assistsInput.style.display = "none";
   assistInputLabel.style.display = "none";
+  averageRating.style.display = "block";
+  avgRatingLabel.style.display = "inline";
 });
 
 calculateButton.addEventListener("click", () => {
