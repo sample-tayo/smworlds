@@ -213,3 +213,26 @@ calculateButton.addEventListener("click", () => {
   avgRatingsDisplay.textContent = `Avg-Ratings: ${averageRating.value} || ${avgRatingPoints}pts`;
   totalTrophiesDisplay.textContent = `Trophies: ${numOfTrophies.value} || ${trophies}pts`;
 });
+
+
+const textToCopy = document.getElementById("stats-display");
+const copyBtn = document.getElementById("copy-btn");
+
+copyBtn.addEventListener("click", function () {
+  // Create a range object and select the text in the div element
+  const range = document.createRange();
+  range.selectNode(textToCopy);
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+
+  // Create a new text area element and set its value to the selected text
+  const textarea = document.createElement("textarea");
+  textarea.value = window.getSelection().toString();
+
+  // Append the text area element to the document body and copy its contents
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  document.body.removeChild(textarea);
+});
+
